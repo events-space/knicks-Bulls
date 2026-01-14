@@ -786,6 +786,7 @@ https://templatemo.com/tm-594-nexus-flow
         }
 
         .hero-nexus {
+            /* Option 1: Current Cyan (default) */
             background: linear-gradient(135deg, var(--primary-cyan), #00ccff);
             background: -webkit-linear-gradient(135deg, var(--primary-cyan), #00ccff);
             -webkit-background-clip: text;
@@ -795,6 +796,154 @@ https://templatemo.com/tm-594-nexus-flow
             transition: all 0.3s ease;
             animation: cyanPulse 3s ease-in-out infinite;
             position: relative;
+        }
+
+        /* Color Option 2: Purple-Pink Gradient */
+        .hero-nexus.option-purple-pink {
+            background: linear-gradient(135deg, var(--primary-purple), var(--primary-pink));
+            background: -webkit-linear-gradient(135deg, var(--primary-purple), var(--primary-pink));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: purplePulse 3s ease-in-out infinite;
+        }
+
+        /* Color Option 3: Orange-Amber Gradient */
+        .hero-nexus.option-orange-amber {
+            background: linear-gradient(135deg, var(--primary-orange), var(--secondary-amber));
+            background: -webkit-linear-gradient(135deg, var(--primary-orange), var(--secondary-amber));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: orangePulse 3s ease-in-out infinite;
+        }
+
+        /* Color Option 4: Cyan-Purple Gradient */
+        .hero-nexus.option-cyan-purple {
+            background: linear-gradient(135deg, var(--primary-cyan), var(--primary-purple));
+            background: -webkit-linear-gradient(135deg, var(--primary-cyan), var(--primary-purple));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: cyanPurplePulse 3s ease-in-out infinite;
+        }
+
+        /* Color Option 5: Pink-Orange Gradient */
+        .hero-nexus.option-pink-orange {
+            background: linear-gradient(135deg, var(--primary-pink), var(--primary-orange));
+            background: -webkit-linear-gradient(135deg, var(--primary-pink), var(--primary-orange));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: pinkOrangePulse 3s ease-in-out infinite;
+        }
+
+        /* Color Option 6: White-Gold Gradient */
+        .hero-nexus.option-white-gold {
+            background: linear-gradient(135deg, #ffffff, #ffd700);
+            background: -webkit-linear-gradient(135deg, #ffffff, #ffd700);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: whiteGoldPulse 3s ease-in-out infinite;
+        }
+
+        /* Color Option 7: Red-Orange Gradient (Bulls colors) */
+        .hero-nexus.option-red-orange {
+            background: linear-gradient(135deg, #ce1141, #ff6b35);
+            background: -webkit-linear-gradient(135deg, #ce1141, #ff6b35);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: redOrangePulse 3s ease-in-out infinite;
+        }
+
+        /* Color Option 8: Blue-Orange Gradient (Knicks + Bulls) */
+        .hero-nexus.option-blue-orange {
+            background: linear-gradient(135deg, #006bb6, #f58426);
+            background: -webkit-linear-gradient(135deg, #006bb6, #f58426);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: blueOrangePulse 3s ease-in-out infinite;
+        }
+
+        /* Pulse animations for new color options */
+        @keyframes purplePulse {
+            0%, 100% { 
+                filter: brightness(1) drop-shadow(0 0 15px rgba(124, 58, 237, 0.6));
+                transform: translateY(0) scale(1);
+            }
+            50% { 
+                filter: brightness(1.1) drop-shadow(0 0 25px rgba(124, 58, 237, 0.8));
+                transform: translateY(-2px) scale(1.01);
+            }
+        }
+
+        @keyframes orangePulse {
+            0%, 100% { 
+                filter: brightness(1) drop-shadow(0 0 15px rgba(249, 115, 22, 0.6));
+                transform: translateY(0) scale(1);
+            }
+            50% { 
+                filter: brightness(1.1) drop-shadow(0 0 25px rgba(249, 115, 22, 0.8));
+                transform: translateY(-2px) scale(1.01);
+            }
+        }
+
+        @keyframes cyanPurplePulse {
+            0%, 100% { 
+                filter: brightness(1) drop-shadow(0 0 15px rgba(0, 255, 255, 0.6));
+                transform: translateY(0) scale(1);
+            }
+            50% { 
+                filter: brightness(1.1) drop-shadow(0 0 25px rgba(124, 58, 237, 0.8));
+                transform: translateY(-2px) scale(1.01);
+            }
+        }
+
+        @keyframes pinkOrangePulse {
+            0%, 100% { 
+                filter: brightness(1) drop-shadow(0 0 15px rgba(255, 0, 255, 0.6));
+                transform: translateY(0) scale(1);
+            }
+            50% { 
+                filter: brightness(1.1) drop-shadow(0 0 25px rgba(249, 115, 22, 0.8));
+                transform: translateY(-2px) scale(1.01);
+            }
+        }
+
+        @keyframes whiteGoldPulse {
+            0%, 100% { 
+                filter: brightness(1) drop-shadow(0 0 15px rgba(255, 255, 255, 0.6));
+                transform: translateY(0) scale(1);
+            }
+            50% { 
+                filter: brightness(1.1) drop-shadow(0 0 25px rgba(255, 215, 0, 0.8));
+                transform: translateY(-2px) scale(1.01);
+            }
+        }
+
+        @keyframes redOrangePulse {
+            0%, 100% { 
+                filter: brightness(1) drop-shadow(0 0 15px rgba(206, 17, 65, 0.6));
+                transform: translateY(0) scale(1);
+            }
+            50% { 
+                filter: brightness(1.1) drop-shadow(0 0 25px rgba(255, 107, 53, 0.8));
+                transform: translateY(-2px) scale(1.01);
+            }
+        }
+
+        @keyframes blueOrangePulse {
+            0%, 100% { 
+                filter: brightness(1) drop-shadow(0 0 15px rgba(0, 107, 182, 0.6));
+                transform: translateY(0) scale(1);
+            }
+            50% { 
+                filter: brightness(1.1) drop-shadow(0 0 25px rgba(245, 132, 38, 0.8));
+                transform: translateY(-2px) scale(1.01);
+            }
         }
 
         .hero-flow {
@@ -833,10 +982,38 @@ https://templatemo.com/tm-594-nexus-flow
             }
         }
 
-        /* Clean hover effect */
+        /* Clean hover effect - adapts to current color */
         .hero-title:hover .hero-nexus {
             transform: translateX(-3px) scale(1.02);
             filter: brightness(1.2) drop-shadow(0 0 30px rgba(0, 255, 255, 0.9));
+        }
+        
+        .hero-title:hover .hero-nexus.option-purple-pink {
+            filter: brightness(1.2) drop-shadow(0 0 30px rgba(124, 58, 237, 0.9));
+        }
+        
+        .hero-title:hover .hero-nexus.option-orange-amber {
+            filter: brightness(1.2) drop-shadow(0 0 30px rgba(249, 115, 22, 0.9));
+        }
+        
+        .hero-title:hover .hero-nexus.option-cyan-purple {
+            filter: brightness(1.2) drop-shadow(0 0 30px rgba(0, 255, 255, 0.9));
+        }
+        
+        .hero-title:hover .hero-nexus.option-pink-orange {
+            filter: brightness(1.2) drop-shadow(0 0 30px rgba(255, 0, 255, 0.9));
+        }
+        
+        .hero-title:hover .hero-nexus.option-white-gold {
+            filter: brightness(1.2) drop-shadow(0 0 30px rgba(255, 215, 0, 0.9));
+        }
+        
+        .hero-title:hover .hero-nexus.option-red-orange {
+            filter: brightness(1.2) drop-shadow(0 0 30px rgba(206, 17, 65, 0.9));
+        }
+        
+        .hero-title:hover .hero-nexus.option-blue-orange {
+            filter: brightness(1.2) drop-shadow(0 0 30px rgba(0, 107, 182, 0.9));
         }
 
         .hero-title:hover .hero-flow {
