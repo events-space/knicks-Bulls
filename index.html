@@ -79,7 +79,9 @@ https://templatemo.com/tm-594-nexus-flow
                 <span class="hero-nexus">Knicks vs Lakers</span>
             </h1>
             <p class="hero-subtitle hospitality-event" style="font-size: 1.5rem; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 2px;">Hospitality Event</p>
-            <p class="hero-subtitle medical-audience" style="font-size: 1.8rem; margin-bottom: 3rem;">FOR MEDICAL PROFESSIONALS<br>AND HIGH NET WORTH INDIVIDUALS</p>
+            <div class="limited-seats-banner" style="font-size: 1.8rem; margin-bottom: 3rem; padding: 1.5rem 2.5rem; background: linear-gradient(135deg, rgba(0, 255, 255, 0.2), rgba(255, 0, 255, 0.2)); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 2px solid rgba(0, 255, 255, 0.5); border-radius: 15px; display: inline-block; text-transform: uppercase; letter-spacing: 3px; font-weight: 700; color: #ffffff; text-shadow: 0 0 20px rgba(0, 255, 255, 0.8), 0 0 40px rgba(255, 0, 255, 0.6), 2px 2px 4px rgba(0, 0, 0, 0.8); box-shadow: 0 0 30px rgba(0, 255, 255, 0.4), inset 0 0 20px rgba(0, 255, 255, 0.1); animation: pulseGlow 2s ease-in-out infinite;">
+                <span style="color: #00ffff; text-shadow: 0 0 15px #00ffff;">LIMITED TO</span> <span style="color: #ff00ff; text-shadow: 0 0 15px #ff00ff; font-size: 2.2rem;">200 SEATS</span>
+            </div>
             <div class="hero-buttons">
                 <a href="#" class="btn-primary" id="openRegisterModal">REGISTER NOW</a>
             </div>
@@ -117,11 +119,11 @@ https://templatemo.com/tm-594-nexus-flow
         <div class="pricing-container">
             <div class="about-content-wrapper">
                 <div class="about-text">
-                    <h2 class="section-title about-title" style="text-align: left; margin-bottom: 2rem;">MEET A CURATED GROUP OF MEDICAL PROFESSIONALS AND HIGH NET WORTH INDIVIDUALS</h2>
-                    <p class="section-subtitle about-paragraph" style="max-width: none; font-size: 1.1rem; line-height: 1.8; text-align: left;">
+                    <h2 class="section-title about-title" style="text-align: left; margin-bottom: 2rem; font-size: 1.5rem;">MEET A CURATED GROUP OF MEDICAL PROFESSIONALS AND HIGH NET WORTH INDIVIDUALS</h2>
+                    <p class="section-subtitle about-paragraph" style="max-width: none; font-size: 0.9rem; line-height: 1.8; text-align: left;">
                         Connect with leading medical professionals and High Net Worth Individuals in an exclusive setting. This is your opportunity to network with peers who share your commitment to excellence and innovation.
                     </p>
-                    <p class="section-subtitle about-paragraph" style="max-width: none; font-size: 1.1rem; line-height: 1.8; margin-top: 2rem; text-align: left;">
+                    <p class="section-subtitle about-paragraph" style="max-width: none; font-size: 0.9rem; line-height: 1.8; margin-top: 2rem; text-align: left;">
                         Whether you're a longtime Knicks fan or just in it for the vibes, get ready for a night where the competition on the court creates the perfect backdrop for meaningful connections and shared experiences.
                     </p>
                 </div>
@@ -181,6 +183,9 @@ https://templatemo.com/tm-594-nexus-flow
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-content">
+            <div class="footer-register" style="text-align: center; margin-bottom: 2rem;">
+                <a href="#" class="btn-primary" id="footerRegisterModal" style="display: inline-block;">REGISTER NOW</a>
+            </div>
             <div class="footer-bottom">
                 <p>All rights reserved.</p>
             </div>
@@ -295,6 +300,15 @@ https://templatemo.com/tm-594-nexus-flow
                         mobileMenuOverlay.classList.remove('active');
                     }
                 }
+            });
+        }
+
+        // Open modal from footer Register link
+        const footerRegisterModal = document.getElementById('footerRegisterModal');
+        if (footerRegisterModal) {
+            footerRegisterModal.addEventListener('click', function(e) {
+                e.preventDefault();
+                openModal();
             });
         }
 
